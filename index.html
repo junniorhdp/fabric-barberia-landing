@@ -1,0 +1,2347 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Fabric Barbería Universidad Nacional | Demo Comercial</title>
+
+<meta name="description"
+content="Fabric Barbería Universidad Nacional. Cortes profesionales, barbería premium y más de 480 reseñas positivas en Bogotá.">
+    <!-- Google Fonts -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+        
+
+    <style>
+
+     *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+:root{
+
+    --gold:#d4af37;
+    --gold-light:#e4c768;
+
+    --dark:#121212;
+    --dark-2:#1a1a1a;
+    --dark-3:#222222;
+
+    --white:#ffffff;
+    --gray:#cfcfcf;
+
+    --shadow:0 15px 40px rgba(0,0,0,.35);
+
+}
+
+body{
+
+    font-family:'Montserrat',sans-serif;
+    background:var(--dark);
+    color:white;
+    overflow-x:hidden;
+
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+section{
+    padding:100px 8%;
+}
+
+.section-title{
+
+    text-align:center;
+    margin-bottom:60px;
+
+}
+
+.section-title span{
+
+    color:var(--gold);
+    font-size:.9rem;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+
+}
+
+.section-title h2{
+
+    margin-top:15px;
+    font-family:'Playfair Display',serif;
+    font-size:3rem;
+    line-height:1.2;
+
+}
+
+.section-title p{
+
+    margin-top:20px;
+    color:var(--gray);
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+/* DEMO BANNER */
+
+.demo-banner{
+
+    background:var(--gold);
+    color:#111;
+    text-align:center;
+    padding:12px;
+    font-size:.9rem;
+    font-weight:700;
+
+}
+
+/* NAVBAR */
+
+.navbar{
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:rgba(18,18,18,.95);
+
+    backdrop-filter:blur(10px);
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+.logo{
+
+    font-family:'Playfair Display',serif;
+    font-size:1.7rem;
+    color:var(--gold);
+    font-weight:700;
+
+}
+
+.nav-links{
+
+    display:flex;
+    gap:30px;
+
+}
+
+.nav-links a{
+
+    color:white;
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:var(--gold);
+
+}
+
+.nav-btn{
+
+    background:var(--gold);
+    color:#111;
+
+    border:none;
+
+    padding:12px 24px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.nav-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* HERO */
+
+.hero{
+
+    position:relative;
+
+    min-height:90vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    background-image:url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1600&q=80');
+
+    background-size:cover;
+    background-position:center;
+
+}
+
+.hero-overlay{
+
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.70),
+    rgba(0,0,0,.80)
+    );
+
+}
+
+.hero-content{
+
+    position:relative;
+    z-index:2;
+    max-width:900px;
+
+}
+
+.rating-badge{
+
+    display:inline-block;
+
+    background:rgba(212,175,55,.15);
+
+    border:1px solid rgba(212,175,55,.3);
+
+    color:var(--gold);
+
+    padding:12px 22px;
+
+    border-radius:50px;
+
+    margin-bottom:30px;
+
+}
+
+.hero h1{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:4.5rem;
+
+    line-height:1.1;
+
+    margin-bottom:25px;
+
+}
+
+.hero h1 span{
+
+    color:var(--gold);
+
+}
+
+.hero p{
+
+    color:#e0e0e0;
+
+    font-size:1.15rem;
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
+
+.hero-buttons{
+
+    margin-top:40px;
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+
+}
+
+.cta-btn{
+
+    background:var(--gold);
+
+    color:#111;
+
+    border:none;
+
+    padding:18px 35px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.cta-btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.secondary-btn{
+
+    border:1px solid rgba(255,255,255,.2);
+
+    color:white;
+
+    padding:18px 35px;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+}
+
+.secondary-btn:hover{
+
+    background:white;
+    color:black;
+
+}
+
+/* STATS */
+
+.stats{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    margin-top:-80px;
+
+    position:relative;
+    z-index:10;
+
+    padding:0 8% 80px;
+
+    background:transparent;
+
+}
+
+.stat-card{
+
+    background:rgba(26,26,26,.95);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(212,175,55,.15);
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+    transition:.3s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.stat-card h3{
+
+    color:var(--gold);
+
+    font-size:2.4rem;
+
+    margin-bottom:10px;
+
+}
+
+.stat-card p{
+
+    color:var(--gray);
+
+}
+
+/* REVEAL */
+
+.reveal{
+    opacity:1;
+    transform:none;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:none;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:991px){
+
+    .nav-links{
+
+        display:none;
+
+    }
+
+    .hero h1{
+
+        font-size:3rem;
+
+    }
+
+    .stats{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    section{
+
+        padding:80px 5%;
+
+    }
+
+    .hero h1{
+
+        font-size:2.4rem;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .section-title h2{
+
+        font-size:2rem;
+
+    }
+
+}
+
+/* =========================
+SERVICIOS
+========================= */
+
+.services{
+    background:#161616;
+}
+
+.featured-service{
+
+    max-width:700px;
+    margin:0 auto 60px;
+
+    background:linear-gradient(
+    135deg,
+    rgba(212,175,55,.12),
+    rgba(212,175,55,.03)
+    );
+
+    border:1px solid rgba(212,175,55,.2);
+
+    border-radius:25px;
+
+    padding:40px;
+
+    text-align:center;
+}
+
+.featured-badge{
+
+    display:inline-block;
+
+    background:var(--gold);
+
+    color:#111;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    font-size:.85rem;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+}
+
+.featured-service h3{
+
+    font-size:2rem;
+    margin-bottom:15px;
+}
+
+.featured-service p{
+
+    color:var(--gray);
+    margin-bottom:20px;
+}
+
+.featured-service strong{
+
+    display:block;
+
+    font-size:2rem;
+
+    color:var(--gold);
+
+    margin-bottom:25px;
+}
+
+.featured-service button{
+
+    background:var(--gold);
+
+    border:none;
+
+    padding:15px 30px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-weight:700;
+}
+
+.services-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+}
+
+.service-card{
+
+    background:#1d1d1d;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    transition:.35s;
+
+    border:1px solid transparent;
+}
+
+.service-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(212,175,55,.3);
+}
+
+.service-card h3{
+
+    margin-bottom:10px;
+}
+
+.service-card p{
+
+    color:var(--gray);
+
+    margin-bottom:15px;
+}
+
+.service-card span{
+
+    display:block;
+
+    color:var(--gold);
+
+    font-size:1.4rem;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+}
+
+.service-card button{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:var(--gold);
+
+    color:#111;
+
+    font-weight:700;
+
+    cursor:pointer;
+}
+
+.emergency{
+
+    border:1px solid rgba(212,175,55,.3);
+
+    background:
+    linear-gradient(
+    135deg,
+    rgba(212,175,55,.08),
+    #1d1d1d
+    );
+}
+
+.featured-service img{
+    width:100%;
+    height:100%px;
+
+
+    object-position:center 10%;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    margin:20px 0;
+
+    transition:.4s;
+
+    animation:floatImage 4s ease-in-out infinite;
+}
+
+.featured-service:hover img{
+    transform:scale(1.04);
+}
+
+@keyframes floatImage{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+}
+
+.featured-service{
+    position:relative;
+
+    overflow:hidden;
+}
+
+.featured-service::before{
+
+    content:'';
+
+    position:absolute;
+
+    top:-50%;
+    left:-50%;
+
+    width:200%;
+    height:200%;
+
+    background:
+    linear-gradient(
+        45deg,
+        transparent,
+        rgba(212,175,55,.08),
+        transparent
+    );
+
+    animation:shine 6s linear infinite;
+}
+
+@keyframes shine{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+
+
+/* =========================
+GALERIA
+========================= */
+
+.gallery{
+
+    background:#121212;
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:20px;
+}
+
+.gallery-item{
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    height:300px;
+}
+
+.gallery-item img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.6s;
+}
+
+.gallery-item:hover img{
+
+    transform:scale(1.1);
+}
+
+/* =========================
+EQUIPO
+========================= */
+
+.team{
+
+    background:#181818;
+}
+
+.team-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+}
+
+.team-card{
+
+    background:#202020;
+
+    padding:40px;
+
+    border-radius:24px;
+
+    text-align:center;
+
+    transition:.3s;
+}
+
+.team-card:hover{
+
+    transform:translateY(-8px);
+}
+
+.team-avatar{
+
+    width:90px;
+    height:90px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:var(--gold);
+
+    color:#111;
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+}
+
+.team-card h3{
+
+    margin-bottom:10px;
+}
+
+.team-card span{
+
+    color:var(--gold);
+
+    display:block;
+
+    margin-bottom:20px;
+}
+
+.team-card p{
+
+    color:var(--gray);
+
+    line-height:1.8;
+}
+
+/* =========================
+TESTIMONIOS
+========================= */
+
+.testimonials{
+    background:#121212;
+}
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.testimonial-card{
+    background:#1d1d1d;
+    padding:35px;
+    border-radius:24px;
+    border:1px solid rgba(212,175,55,.1);
+    transition:.3s;
+
+    display:flex;
+    flex-direction:column;
+    height:100%;
+}
+
+.testimonial-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(212,175,55,.3);
+}
+
+.stars{
+
+    color:var(--gold);
+
+    font-size:1.2rem;
+
+    margin-bottom:20px;
+}
+
+.testimonial-card p{
+    color:var(--gray);
+    line-height:1.8;
+    margin-bottom:25px;
+    flex-grow:1;
+}
+
+.testimonial-card h4{
+    margin-bottom:5px;
+    color:#fff;
+}
+
+.testimonial-card span{
+    color:var(--gold);
+    font-size:.9rem;
+    font-weight:500;
+}
+/* =========================
+POLITICAS
+========================= */
+
+.policy{
+
+    background:#181818;
+}
+
+.policy-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.policy-card{
+
+    background:#202020;
+
+    padding:35px;
+
+    border-radius:24px;
+
+    text-align:center;
+}
+
+.policy-card i{
+
+    color:var(--gold);
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+}
+
+.policy-card h3{
+
+    margin-bottom:15px;
+}
+
+.policy-card p{
+
+    color:var(--gray);
+
+    line-height:1.7;
+}
+
+/* =========================
+CTA FINAL
+========================= */
+
+.final-cta{
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.85),
+        rgba(0,0,0,.85)
+    ),
+    url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1600&q=80');
+
+    background-size:cover;
+    background-position:center;
+
+    text-align:center;
+}
+
+.cta-container{
+
+    max-width:800px;
+    margin:auto;
+}
+
+.cta-container span{
+
+    color:var(--gold);
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.cta-container h2{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:3rem;
+
+    margin:25px 0;
+}
+
+.cta-container p{
+
+    color:var(--gray);
+
+    margin-bottom:35px;
+}
+
+/* =========================
+CONTACTO
+========================= */
+
+.contact{
+
+    background:#121212;
+}
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:1.2fr 1fr;
+
+    gap:40px;
+}
+
+
+.contact-card{
+
+    background:#1d1d1d;
+
+    padding:40px;
+
+    border-radius:24px;
+}
+
+.contact-item{
+
+    display:flex;
+
+    gap:20px;
+
+    align-items:flex-start;
+
+    margin-bottom:30px;
+}
+
+.contact-item i{
+
+    color:var(--gold);
+
+    font-size:1.5rem;
+
+    width:35px;
+}
+
+.contact-item p{
+
+    color:var(--gray);
+
+    margin-top:5px;
+}
+
+.contact-header{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.contact-header h3{
+    margin-bottom:10px;
+    font-size:1.5rem;
+}
+
+.contact-header p{
+    color:var(--gray);
+}
+
+.contact-stats{
+    margin-top:35px;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+}
+
+.contact-stats div{
+    background:#242424;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    text-align:center;
+}
+
+.contact-stats strong{
+    display:block;
+
+    color:var(--gold);
+
+    font-size:1.4rem;
+
+    margin-bottom:5px;
+}
+
+.contact-stats span{
+    color:var(--gray);
+    font-size:.9rem;
+}
+
+
+/* =========================
+MAPA
+========================= */
+
+.map-card{
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    background:#1a1a1a;
+
+    border:1px solid rgba(212,175,55,.15);
+}
+
+.map-card iframe{
+
+    width:100%;
+
+    height:420px;
+
+    border:none;
+}
+
+.map-info{
+    padding:30px;
+}
+
+.location-badge{
+    display:inline-block;
+    background:rgba(212,175,55,.12);
+    color:var(--gold);
+    padding:8px 14px;
+    border-radius:50px;
+    font-size:.85rem;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.map-info h3{
+font-size:1.5rem;
+margin-bottom:15px;
+position:relative;
+padding-bottom:15px;
+}
+
+.map-info h3::after{
+content:'';
+
+position:absolute;
+left:0;
+bottom:0;
+
+width:70px;
+height:3px;
+
+background:var(--gold);
+border-radius:10px;
+}
+
+.map-info h3 i{
+    color:var(--gold);
+    margin-right:8px;
+}
+
+.address{
+    color:#fff;
+    font-weight:500;
+    margin-bottom:12px;
+}
+
+.location-note{
+    color:var(--gray);
+    line-height:1.7;
+    margin-bottom:25px;
+}
+
+.location-features{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-bottom:25px;
+}
+
+.location-features span{
+display:flex;
+align-items:center;
+gap:8px;
+
+background:#242424;
+
+padding:12px 16px;
+
+border-radius:50px;
+
+font-size:.9rem;
+
+color:#fff;
+
+border:1px solid rgba(212,175,55,.15);
+}
+
+.location-features i{
+    color:var(--gold);
+    margin-right:6px;
+}
+
+.map-btn{
+display:inline-flex;
+align-items:center;
+gap:10px;
+
+background:var(--gold);
+color:#111;
+
+padding:15px 28px;
+
+border-radius:50px;
+
+font-weight:700;
+text-decoration:none;
+
+box-shadow:
+0 10px 25px rgba(212,175,55,.15);
+
+transition:.3s;
+}
+
+.map-btn:hover{
+transform:translateY(-4px);
+
+box-shadow:
+0 15px 35px rgba(212,175,55,.30);
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+
+    background:#0e0e0e;
+
+    padding:60px 8% 30px;
+}
+
+.footer-content{
+
+    text-align:center;
+}
+
+.footer-content h3{
+
+    color:var(--gold);
+
+    font-family:'Playfair Display',serif;
+
+    font-size:2rem;
+
+    margin-bottom:15px;
+}
+
+.footer-content p{
+
+    color:var(--gray);
+}
+
+.footer-rating{
+
+    margin-top:20px;
+
+    color:var(--gold);
+}
+
+.footer-bottom{
+
+    margin-top:40px;
+
+    text-align:center;
+
+    color:#888;
+
+    border-top:1px solid rgba(255,255,255,.05);
+
+    padding-top:20px;
+}
+
+/* =========================
+WHATSAPP
+========================= */
+
+.whatsapp-btn{
+
+    position:fixed;
+
+    bottom:25px;
+    right:25px;
+
+    width:65px;
+    height:65px;
+
+    border-radius:50%;
+
+    background:#25d366;
+
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:1.8rem;
+
+    z-index:999;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+    transition:.3s;
+}
+
+.whatsapp-btn:hover{
+
+    transform:scale(1.1);
+}
+
+/* =========================
+MODAL
+========================= */
+
+.modal-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.75);
+
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:5000;
+}
+
+.modal-overlay.show{
+
+    display:flex;
+}
+
+.modal{
+
+    background:#1a1a1a;
+
+    width:90%;
+    max-width:550px;
+
+    border-radius:25px;
+
+    padding:40px;
+
+    text-align:center;
+
+    position:relative;
+}
+
+.modal-icon{
+
+    font-size:3rem;
+
+    color:var(--gold);
+
+    margin-bottom:20px;
+}
+
+.modal h3{
+
+    margin-bottom:20px;
+}
+
+.modal p{
+
+    color:var(--gray);
+
+    line-height:1.8;
+}
+
+.close-modal{
+
+    position:absolute;
+
+    top:15px;
+    right:15px;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    cursor:pointer;
+}
+
+.modal-btn{
+
+    margin-top:25px;
+
+    background:var(--gold);
+
+    color:#111;
+
+    border:none;
+
+    padding:15px 30px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    cursor:pointer;
+}
+
+@media(max-width:900px){
+
+    .contact-grid{
+
+        grid-template-columns:1fr;
+    }
+}
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- DEMO BANNER -->
+
+    <div class="demo-banner">
+        ⚠️ ESTA ES UNA PÁGINA DE DEMOSTRACIÓN Y MUESTRA DE PRUEBA NO OFICIAL - Creada por Junior
+    </div>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+           <i class="fa-solid fa-scissors"></i>
+           Fabric Barbería
+        </div>
+        <ul class="nav-links">
+
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#equipo">Barberos</a></li>
+    <li><a href="#resenas">Reseñas</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+
+</ul>
+
+        <button class="nav-btn open-modal">
+            Reservar Cita
+        </button>
+
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <div class="rating-badge">
+    ⭐ 4.6 en Google Maps (480+ reseñas)
+</div>
+
+<h1>
+    Tu mejor versión
+    <span>comienza aquí.</span>
+</h1>
+
+<p>
+    Cortes modernos, barba, cuidado facial y atención profesional
+    en una de las barberías mejor calificadas de Bogotá.
+    Más de 10.000 clientes satisfechos respaldan nuestra experiencia.
+</p>
+
+<div class="hero-buttons">
+
+    <button class="cta-btn open-modal">
+        RESERVAR MI CITA
+    </button>
+
+    <a href="#servicios" class="secondary-btn">
+        Ver Servicios
+    </a>
+
+</div>
+
+        </div>
+
+    </section>
+
+    <!-- ESTADISTICAS -->
+
+    <section class="stats reveal">
+
+        <div class="stat-card">
+    <h3>4.6★</h3>
+    <p>Calificación Google</p>
+</div>
+
+<div class="stat-card">
+    <h3>480+</h3>
+    <p>Reseñas Verificadas</p>
+</div>
+
+<div class="stat-card">
+    <h3>10.000+</h3>
+    <p>Clientes Atendidos</p>
+</div>
+
+<div class="stat-card">
+    <h3>100%</h3>
+    <p>Atención Profesional</p>
+</div>
+
+    </section>
+
+    <!-- SERVICIOS -->
+
+<section class="services reveal" id="servicios">
+
+    <div class="section-title">
+
+        <span>Nuestros Servicios</span>
+
+        <h2>
+            Diseñados para potenciar tu imagen
+        </h2>
+
+    </div>
+
+    <div class="featured-service">
+
+        <div class="featured-badge">
+            ⭐ MÁS RESERVADO
+        </div>
+
+          <img
+        src="https://d2zdpiztbgorvt.cloudfront.net/region1/mx/6211/service_photos/c0bf3fa33ad24e7d84bb00d19182b9b9.jpeg"
+        alt="Corte Ganador">
+
+        <h3>Corte Ganador</h3>
+
+        <p>
+Incluye asesoría profesional, corte de cabello,
+lavado y peinado con productos profesionales.
+</p>
+
+        <strong>$35.000</strong>
+
+        <button class="open-modal">
+            Reservar Ahora
+        </button>
+
+    </div>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+    <h3>Corte Ganador</h3>
+    <p>Servicio Premium</p>
+    <span>$35.000</span>
+    <button class="open-modal">Reservar</button>
+</div>
+
+<div class="service-card">
+    <h3>Estación Don Juan</h3>
+    <p>Experiencia Completa</p>
+    <span>$70.000</span>
+    <button class="open-modal">Reservar</button>
+</div>
+
+<div class="service-card">
+    <h3>Corte + Barba</h3>
+    <p>Look completo</p>
+    <span>Consultar</span>
+    <button class="open-modal">Reservar</button>
+</div>
+
+<div class="service-card">
+    <h3>Mantenimiento de Barba</h3>
+    <p>Perfilado profesional</p>
+    <span>Consultar</span>
+    <button class="open-modal">Reservar</button>
+</div>
+
+<div class="service-card">
+    <h3>Exfoliación Facial</h3>
+    <p>Cuidado masculino</p>
+    <span>Consultar</span>
+    <button class="open-modal">Reservar</button>
+</div>
+
+<div class="service-card">
+    <h3>Arreglo de Cejas</h3>
+    <p>Detalle y precisión</p>
+    <span>Consultar</span>
+    <button class="open-modal">Reservar</button>
+</div>
+
+    </div>
+
+</section>
+
+<!-- GALERÍA -->
+
+<section class="gallery reveal">
+
+    <div class="section-title">
+
+        <span>Nuestro Estilo</span>
+
+        <h2>
+            Donde la tradición se encuentra con la excelencia
+        </h2>
+
+        <p>
+            Cada corte es una obra de precisión, detalle y personalidad.
+        </p>
+
+    </div>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=80"
+                alt="Barbería Premium">
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=900&q=80"
+                alt="Barber Shop">
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=900&q=80"
+                alt="Fade Profesional">
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=80"
+                alt="Corte Moderno">
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=900&q=80"
+                alt="Vintage Barber">
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=80"
+                alt="Barbero Profesional">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- EQUIPO -->
+
+<section class="team reveal" id="equipo">
+
+<div class="section-title" id="equipo">
+
+    <span>Equipo Profesional</span>
+
+    <h2>
+        ¿Por qué elegir Fabric Barbería?
+    </h2>
+
+</div>
+
+<div class="team-grid">
+
+    <div class="team-card">
+
+        <div class="team-avatar">
+            <i class="fa-solid fa-user"></i>
+        </div>
+
+        <h3>Barberos Expertos</h3>
+
+        <span>Especialistas en imagen masculina</span>
+
+        <p>
+            Nuestro equipo está capacitado en cortes clásicos,
+            fades modernos, barbería tradicional y asesoría
+            personalizada para ayudarte a encontrar el estilo
+            que mejor se adapta a ti.
+        </p>
+
+    </div>
+
+    <div class="team-card">
+
+        <div class="team-avatar">
+            <i class="fa-solid fa-user"></i>
+        </div>
+
+        <h3>Experiencia Fabric</h3>
+
+        <span>Atención personalizada</span>
+
+        <p>
+            Cada servicio se realiza con atención al detalle,
+            productos profesionales y un enfoque centrado en la
+            comodidad del cliente para garantizar una experiencia
+            de calidad de principio a fin.
+        </p>
+
+    </div>
+
+</div>
+</section>
+
+<!-- TESTIMONIOS -->
+
+<section class="testimonials reveal" id="resenas">
+
+<div class="section-title" id="resenas">
+
+    <span>Reseñas Reales</span>
+
+    <h2>
+        Más de 480 clientes recomiendan Fabric Barbería
+    </h2>
+
+</div>
+
+<div class="testimonial-grid">
+
+    <div class="testimonial-card">
+
+        <div class="stars">
+            ★★★★★
+        </div>
+
+        <p>
+            "Excelente atención al detalle y calidad del servicio.
+            ¡Recomendados sin duda!"
+        </p>
+
+        <h4>Nick Montero</h4>
+
+        <span>Cliente Verificado</span>
+
+    </div>
+
+    <div class="testimonial-card">
+
+        <div class="stars">
+            ★★★★★
+        </div>
+
+        <p>
+            "Excelente servicio y el talento de los barberos es
+            descomunal. Un ejemplo es Juan David."
+        </p>
+
+        <h4>Santiago Rodríguez</h4>
+
+        <span>Cliente Verificado</span>
+
+    </div>
+
+    <div class="testimonial-card">
+
+        <div class="stars">
+            ★★★★★
+        </div>
+
+        <p>
+            "Muy buen servicio y gran ambiente. Las instalaciones
+            están excelentes y la experiencia fue muy agradable."
+        </p>
+
+        <h4>Miguel Alejandro Velosa</h4>
+
+        <span>Cliente Verificado</span>
+
+    </div>
+
+</div>
+</section>
+
+<!-- INFORMACIÓN IMPORTANTE -->
+
+<section class="policy reveal">
+
+<div class="section-title">
+
+    <span>Nuestra Diferencia</span>
+
+    <h2>
+        Más que un corte, una experiencia
+    </h2>
+
+</div>
+
+<div class="policy-grid">
+
+    <div class="policy-card">
+
+        <i class="fa-solid fa-user-check"></i>
+
+        <h3>Atención Personalizada</h3>
+
+        <p>
+            Cada cliente recibe asesoría profesional para encontrar
+            el corte y estilo que mejor se adapta a su imagen.
+        </p>
+
+    </div>
+
+    <div class="policy-card">
+
+        <i class="fa-solid fa-scissors"></i>
+
+        <h3>Cortes de Alta Calidad</h3>
+
+        <p>
+            Técnicas modernas, acabados precisos y atención al detalle
+            en cada servicio realizado por nuestro equipo.
+        </p>
+
+    </div>
+
+    <div class="policy-card">
+
+        <i class="fa-solid fa-face-smile"></i>
+
+        <h3>Clientes Satisfechos</h3>
+
+        <p>
+            Más de 10.000 clientes atendidos y cientos de reseñas
+            positivas respaldan la calidad de la experiencia Fabric.
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- CTA FINAL -->
+
+<section class="final-cta reveal">
+
+<div class="cta-container">
+
+    <span>Tu nueva versión comienza aquí</span>
+
+    <h2>
+        Vive la experiencia Fabric Barbería
+    </h2>
+
+    <p>
+        Calidad, precisión y atención al detalle en cada servicio.
+        Descubre por qué cientos de clientes califican nuestra
+        experiencia con 4.6 estrellas en Google.
+    </p>
+
+    <button class="cta-btn open-modal">
+        RESERVAR MI CITA
+    </button>
+
+</div>
+
+</section>
+
+<!-- CONTACTO -->
+
+<section class="contact reveal" id="contacto">
+<div class="section-title" id="contacto">
+
+    <span>Contacto</span>
+
+    <h2>
+        Visítanos cerca de la Universidad Nacional
+    </h2>
+
+</div>
+
+<div class="contact-grid">
+
+    </section>
+
+
+  <!-- MAPA -->
+
+<section class="contact reveal" id="contacto">
+
+    <div class="section-title">
+
+        <span>Contacto</span>
+
+        <h2>
+            Visítanos cerca de la Universidad Nacional
+        </h2>
+
+    </div>
+
+    <div class="contact-grid">
+
+        <!-- MAPA -->
+
+        <div class="map-card">
+
+            <iframe
+                src="https://maps.google.com/maps?q=Fabric%20Barberia%20Universidad%20Nacional%20Bogota&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+
+            <div class="map-info">
+
+                <div class="location-badge">
+                    📍 Universidad Nacional
+                </div>
+
+                <h3>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Fabric Barbería
+                </h3>
+
+                <p class="address">
+                    Cra. 33 #28-27<br>
+                    Bogotá, Colombia
+                </p>
+
+                <p class="location-note">
+                    A pocos minutos de la Universidad Nacional,
+                    en una ubicación estratégica y de fácil acceso.
+                </p>
+
+                <div class="location-features">
+
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                        4.6 Google
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-users"></i>
+                        480+ reseñas
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-scissors"></i>
+                        10.000+ clientes
+                    </span>
+
+                </div>
+
+                <a
+                    href="https://www.google.com/maps/place/Fabric+Barberia+Universidad+Nacional/@4.631226,-74.0841189,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f9bd413592ff7:0x7fd6928b72ff8a5c!8m2!3d4.631226!4d-74.081544!16s%2Fg%2F11gdlywtxs?entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="map-btn">
+
+                    <i class="fa-solid fa-location-arrow"></i>
+                    Cómo llegar
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- INFORMACIÓN -->
+
+<div class="contact-card">
+
+    <div class="contact-header">
+
+        <h3>Información rápida</h3>
+
+        <p>
+            Contáctanos o reserva tu cita en pocos minutos.
+        </p>
+
+    </div>
+
+    <div class="contact-item">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+        <div>
+            <h4>WhatsApp</h4>
+            <p>316 334 4212</p>
+        </div>
+
+    </div>
+
+    <div class="contact-item">
+
+        <i class="fa-solid fa-globe"></i>
+
+        <div>
+            <h4>Sitio Web</h4>
+            <p>fabricbarberia.com</p>
+        </div>
+
+    </div>
+
+    <div class="contact-item">
+
+        <i class="fa-solid fa-star"></i>
+
+        <div>
+            <h4>Calificación</h4>
+            <p>4.6 ★ basado en más de 480 reseñas</p>
+        </div>
+
+    </div>
+
+    <div class="contact-item">
+
+        <i class="fa-regular fa-clock"></i>
+
+        <div>
+            <h4>Horario</h4>
+            <p>Abierto hoy hasta las 7:00 PM</p>
+        </div>
+
+    </div>
+
+    <div class="contact-stats">
+
+        <div>
+            <strong>480+</strong>
+            <span>Reseñas</span>
+        </div>
+
+        <div>
+            <strong>10K+</strong>
+            <span>Clientes</span>
+        </div>
+
+        <div>
+            <strong>4.6</strong>
+            <span>Google</span>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="footer-content">
+
+    <h3>Fabric Barbería</h3>
+
+    <p>
+        Más de 10.000 clientes han confiado en nosotros para renovar su estilo.
+        Cortes de cabello, barba y cuidado personal con atención profesional,
+        asesoría personalizada y un ambiente diseñado para que disfrutes cada visita.
+    </p>
+
+    <div class="footer-rating">
+
+        ⭐⭐⭐⭐⭐
+        <span>4.6 en Google Maps • 480+ reseñas verificadas</span>
+
+    </div>
+
+</div>
+
+<div class="footer-bottom">
+
+    <p>
+        © 2026 Fabric Barbería Universidad Nacional - Página DEMO NO OFICIAL.
+    </p>
+
+</div>
+
+</footer>
+
+<!-- BOTÓN WHATSAPP -->
+
+<a href="#" class="whatsapp-btn open-modal">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<!-- MODAL DEMO -->
+
+<div class="modal-overlay" id="demoModal">
+
+    <div class="modal">
+
+        <button class="close-modal">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+        <div class="modal-icon">
+
+            <i class="fa-solid fa-calendar-check"></i>
+
+        </div>
+
+        <h3>
+            Reserva de Demostración
+        </h3>
+
+        <p>
+            Esta es una página DEMO creada como propuesta comercial.
+
+            En la versión final, este botón puede dirigir a:
+
+            <br><br>
+
+            ✔ WhatsApp
+
+            <br>
+
+            ✔ Agenda Online
+
+            <br>
+
+            ✔ Calendario de Reservas
+
+            <br>
+
+            ✔ Confirmaciones Automáticas
+        </p>
+
+        <button class="modal-btn close-modal">
+
+            Entendido
+
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+
+/* =========================
+MODAL DEMO
+========================= */
+
+const modal = document.getElementById('demoModal');
+
+const openButtons = document.querySelectorAll('.open-modal');
+
+const closeButtons = document.querySelectorAll('.close-modal');
+
+openButtons.forEach(button => {
+
+    button.addEventListener('click', (e) => {
+
+        e.preventDefault();
+
+        modal.classList.add('show');
+
+        document.body.style.overflow = 'hidden';
+
+    });
+
+});
+
+closeButtons.forEach(button => {
+
+    button.addEventListener('click', () => {
+
+        modal.classList.remove('show');
+
+        document.body.style.overflow = 'auto';
+
+    });
+
+});
+
+modal.addEventListener('click', (e) => {
+
+    if(e.target === modal){
+
+        modal.classList.remove('show');
+
+        document.body.style.overflow = 'auto';
+
+    }
+
+});
+
+
+/* =========================
+SCROLL REVEAL
+========================= */
+
+const reveals = document.querySelectorAll('.reveal');
+
+const observer = new IntersectionObserver((entries)=>{
+
+    entries.forEach((entry)=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add('active');
+
+        }
+
+    });
+
+},{
+    threshold:0.15
+});
+
+reveals.forEach((element)=>{
+
+    observer.observe(element);
+
+});
+
+
+/* =========================
+NAVBAR SCROLL EFFECT
+========================= */
+
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', ()=>{
+
+    if(window.scrollY > 50){
+
+        navbar.style.background =
+        'rgba(18,18,18,.98)';
+
+        navbar.style.boxShadow =
+        '0 10px 30px rgba(0,0,0,.35)';
+
+    }
+
+    else{
+
+        navbar.style.background =
+        'rgba(18,18,18,.95)';
+
+        navbar.style.boxShadow =
+        'none';
+
+    }
+
+});
+
+
+/* =========================
+SMOOTH LINKS
+========================= */
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+    anchor.addEventListener('click', function(e) {
+
+        e.preventDefault();
+
+        const target =
+        document.querySelector(this.getAttribute('href'));
+
+        if(target){
+
+            target.scrollIntoView({
+
+                behavior:'smooth',
+                block:'start'
+
+            });
+
+        }
+
+    });
+
+});
+
+
+/* =========================
+ANIMACIÓN BOTONES
+========================= */
+
+const buttons = document.querySelectorAll(
+'.cta-btn, .nav-btn, .service-card button, .modal-btn'
+);
+
+buttons.forEach(button => {
+
+    button.addEventListener('mouseenter', () => {
+
+        button.style.transform =
+        'translateY(-3px)';
+
+    });
+
+    button.addEventListener('mouseleave', () => {
+
+        button.style.transform =
+        'translateY(0)';
+
+    });
+
+});
+
+
+
+</script>
+
+</body>

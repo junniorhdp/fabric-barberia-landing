@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vintage Club Barber | Demo Comercial</title>
+
+    <meta name="description"
+        content="Vintage Club Barber - El arte del corte clásico con la precisión moderna.">
+
+    <!-- Google Fonts -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    
+
+</head>
+
+<body>
+
+    <!-- DEMO BANNER -->
+
+    <div class="demo-banner">
+        ⚠️ ESTA ES UNA PÁGINA DE DEMOSTRACIÓN Y MUESTRA DE PRUEBA NO OFICIAL - Creada por Junior
+    </div>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+    <i class="fa-solid fa-scissors"></i>
+    Vintage Club Barber
+</div>
+        <ul class="nav-links">
+
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#equipo">Equipo</a></li>
+            <li><a href="#resenas">Reseñas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+
+        </ul>
+
+        <button class="nav-btn open-modal">
+            Reservar Cita
+        </button>
+
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <div class="rating-badge">
+                ⭐ 5.0 en Google Maps (33+ Reseñas)
+            </div>
+
+            <h1>
+                El arte del corte clásico
+                <span>con la precisión moderna.</span>
+            </h1>
+
+            <p>
+                Más que un corte de cabello, una experiencia de 5 estrellas
+                en Bogotá. Reserva con barberos expertos con más de 7 años
+                de experiencia.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="cta-btn open-modal">
+                    RESERVAR MI TURNO
+                </button>
+
+                <a href="#servicios" class="secondary-btn">
+                    Ver Servicios
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ESTADISTICAS -->
+
+    <section class="stats reveal">
+
+        <div class="stat-card">
+            <h3>5.0★</h3>
+            <p>Calificación Google</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>33+</h3>
+            <p>Reseñas Verificadas</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>7+</h3>
+            <p>Años de Experiencia</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>100%</h3>
+            <p>Atención Profesional</p>
+        </div>
+
+    </section>
+
+    <!-- SERVICIOS -->
+
+<section class="services reveal" id="servicios">
+
+    <div class="section-title">
+
+        <span>Nuestros Servicios</span>
+
+        <h2>
+            Diseñados para potenciar tu imagen
+        </h2>
+
+    </div>
+
+    <div class="featured-service">
+
+        <div class="featured-badge">
+            ⭐ MÁS RESERVADO
+        </div>
+
+        <h3>Corte y Barba Express</h3>
+
+        <p>
+            Nuestro servicio más solicitado por clientes.
+        </p>
+
+        <strong>$25.000</strong>
+
+        <button class="open-modal">
+            Reservar Ahora
+        </button>
+
+    </div>
+
+    <div class="services-grid">
+
+        <div class="service-card emergency">
+            <h3>Corte de Emergencia</h3>
+            <p>45 min</p>
+            <span>$30.000</span>
+            <button class="open-modal">Reservar</button>
+        </div>
+
+        <div class="service-card emergency">
+            <h3>Corte + Barba Emergencia</h3>
+            <p>1 Hora</p>
+            <span>$35.000</span>
+            <button class="open-modal">Reservar</button>
+        </div>
+
+        <div class="service-card">
+            <h3>Corte Clásico o Fade</h3>
+            <p>45 min</p>
+            <span>$20.000</span>
+            <button class="open-modal">Reservar</button>
+        </div>
+
+        <div class="service-card">
+            <h3>Corte + Cejas</h3>
+            <p>45 min</p>
+            <span>$22.000</span>
+            <button class="open-modal">Reservar</button>
+        </div>
+
+        <div class="service-card">
+            <h3>Corte + Ritual Barba</h3>
+            <p>1 Hora</p>
+            <span>$30.000</span>
+            <button class="open-modal">Reservar</button>
+        </div>
+
+        <div class="service-card">
+            <h3>Barba Express</h3>
+            <p>35 min</p>
+            <span>$20.000</span>
+            <button class="open-modal">Reservar</button>
+        </div>
+
+        <div class="service-card">
+            <h3>Exfoliación Facial</h3>
+            <p>30 min</p>
+            <span>$20.000</span>
+            <button class="open-modal">Reservar</button>
+        </div>
+
+        <div class="service-card">
+            <h3>Corte + Exfoliación</h3>
+            <p>1 Hora</p>
+            <span>$30.000</span>
+            <button class="open-modal">Reservar</button>
+        </div>
+
+        <div class="service-card">
+            <h3>Corte Niño</h3>
+            <p>45 min</p>
+            <span>$19.000</span>
+            <button class="open-modal">Reservar</button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- GALERÍA -->
+
+<section class="gallery reveal">
+
+    <div class="section-title">
+
+        <span>Nuestro Estilo</span>
+
+        <h2>
+            Donde la tradición se encuentra con la excelencia
+        </h2>
+
+        <p>
+            Cada corte es una obra de precisión, detalle y personalidad.
+        </p>
+
+    </div>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=80"
+                alt="Barbería Premium">
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=900&q=80"
+                alt="Barber Shop">
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=900&q=80"
+                alt="Fade Profesional">
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=80"
+                alt="Corte Moderno">
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=900&q=80"
+                alt="Vintage Barber">
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=80"
+                alt="Barbero Profesional">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- EQUIPO -->
+
+<section class="team reveal" id="equipo">
+
+    <div class="section-title">
+
+        <span>Equipo Profesional</span>
+
+        <h2>
+            Barberos que convierten experiencia en estilo
+        </h2>
+
+    </div>
+
+    <div class="team-grid">
+
+        <div class="team-card">
+
+            <div class="team-avatar">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <h3>Estiven Parra</h3>
+
+            <span>Barbero Profesional</span>
+
+            <p>
+                ¡Hola! Mi nombre es Estiven. Cuento con un espacio adecuado
+                y agradable para una mejor experiencia. Tengo más de 7 años
+                de experiencia y garantizo un servicio 100% profesional.
+                💈✌🏻
+            </p>
+
+        </div>
+
+        <div class="team-card">
+
+            <div class="team-avatar">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <h3>Daniel Hernández</h3>
+
+            <span>Barbero Profesional</span>
+
+            <p>
+                Barbero Profesional listo para llevar tu estilo al siguiente
+                nivel. Experto en técnicas tradicionales y fades modernos.
+                💈
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- TESTIMONIOS -->
+
+<section class="testimonials reveal" id="resenas">
+
+    <div class="section-title">
+
+        <span>Reseñas Reales</span>
+
+        <h2>
+            Lo que dicen nuestros clientes
+        </h2>
+
+    </div>
+
+    <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "Soy de Argentina, y fui a cortarme el pelo en Vintage Club
+                Barber y fue una experiencia maravillosa, muy buena atención
+                de su dueño. 100% recomendable. Saludos!"
+            </p>
+
+            <h4>Nicolás Hernandez</h4>
+
+            <span>Local Guide</span>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "Excelente Barbería muchachos, no toca esperar que lo
+                atiendan, el lugar es muy bonito, los barberos muy
+                profesionales en lo que hacen y los precios son económicos."
+            </p>
+
+            <h4>Alejandro Obando</h4>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "Es la mejor barbería donde he ido. El trato del barbero
+                hacia el cliente es muy bueno, es muy gustoso irse a cortar
+                el cabello a Vintage Club Barber."
+            </p>
+
+            <h4>Miguel Ruiz Gomez</h4>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- INFORMACIÓN IMPORTANTE -->
+
+<section class="policy reveal">
+
+    <div class="section-title">
+
+        <span>Antes de tu cita</span>
+
+        <h2>
+            Información importante
+        </h2>
+
+    </div>
+
+    <div class="policy-grid">
+
+        <div class="policy-card">
+
+            <i class="fa-regular fa-clock"></i>
+
+            <h3>Puntualidad</h3>
+
+            <p>
+                Te recomendamos llegar unos minutos antes de tu cita para
+                brindarte una atención más cómoda y organizada.
+            </p>
+
+        </div>
+
+        <div class="policy-card">
+
+            <i class="fa-solid fa-calendar-xmark"></i>
+
+            <h3>Cancelaciones</h3>
+
+            <p>
+                Si necesitas cancelar o reprogramar, hazlo con al menos
+                2 horas de anticipación.
+            </p>
+
+        </div>
+
+        <div class="policy-card">
+
+            <i class="fa-solid fa-handshake"></i>
+
+            <h3>Compromiso</h3>
+
+            <p>
+                Las inasistencias afectan la agenda del equipo y pueden
+                generar restricciones para futuras reservas.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA FINAL -->
+
+<section class="final-cta reveal">
+
+    <div class="cta-container">
+
+        <span>Tu próximo corte comienza aquí</span>
+
+        <h2>
+            Reserva una experiencia de barbería premium
+            en Vintage Club Barber
+        </h2>
+
+        <p>
+            Cortes clásicos, fades modernos, rituales de barba y atención
+            profesional respaldada por una calificación de 5 estrellas.
+        </p>
+
+        <button class="cta-btn open-modal">
+            RESERVAR MI CITA
+        </button>
+
+    </div>
+
+</section>
+
+<!-- CONTACTO -->
+
+<section class="contact reveal" id="contacto">
+
+    <div class="section-title">
+
+        <span>Contacto</span>
+
+        <h2>
+            Visítanos en Bogotá
+        </h2>
+
+    </div>
+
+    <div class="contact-grid">
+
+  <!-- MAPA -->
+
+<div class="map-card">
+
+    <iframe
+        src="https://www.google.com/maps?q=Vintage+Club+Barber+Bogota&output=embed"
+        loading="lazy"
+        allowfullscreen>
+    </iframe>
+
+    <div class="map-info">
+
+        <h3>
+            <i class="fa-solid fa-location-dot"></i>
+            Vintage Club Barber
+        </h3>
+
+        <p>
+            Calle 48j Sur #5g - 27 int 11<br>
+            Rafael Uribe Uribe, Bogotá
+        </p>
+
+        <a
+            href="https://www.google.com/maps/place/Vintage+Club+Barber/"
+            target="_blank"
+            class="map-btn">
+
+            Ver en Google Maps
+
+        </a>
+
+    </div>
+
+</div>
+
+        <!-- INFORMACIÓN -->
+
+        <div class="contact-card">
+
+            <div class="contact-item">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                <div>
+
+                    <h4>WhatsApp</h4>
+
+                    <p>316 812 8386</p>
+
+                </div>
+
+            </div>
+
+            <div class="contact-item">
+
+                <i class="fa-regular fa-envelope"></i>
+
+                <div>
+
+                    <h4>Email</h4>
+
+                    <p>alvarinet14@hotmail.com</p>
+
+                </div>
+
+            </div>
+
+            <div class="contact-item">
+
+                <i class="fa-brands fa-instagram"></i>
+
+                <div>
+
+                    <h4>Instagram</h4>
+
+                    <p>@vintage.club.barber</p>
+
+                </div>
+
+            </div>
+
+            <div class="contact-item">
+
+                <i class="fa-regular fa-clock"></i>
+
+                <div>
+
+                    <h4>Horario</h4>
+
+                    <p>
+                        Abierto hasta las 8:30 PM / 9:00 PM
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <h3>Vintage Club Barber</h3>
+
+        <p>
+            El arte del corte clásico con la precisión moderna.
+        </p>
+
+        <div class="footer-rating">
+
+            ⭐⭐⭐⭐⭐
+            <span>5.0 en Google Maps</span>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Vintage Club Barber - Página DEMO NO OFICIAL.
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- BOTÓN WHATSAPP -->
+
+<a href="#" class="whatsapp-btn open-modal">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<!-- MODAL DEMO -->
+
+<div class="modal-overlay" id="demoModal">
+
+    <div class="modal">
+
+        <button class="close-modal">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+        <div class="modal-icon">
+
+            <i class="fa-solid fa-calendar-check"></i>
+
+        </div>
+
+        <h3>
+            Reserva de Demostración
+        </h3>
+
+        <p>
+            Esta es una página DEMO creada como propuesta comercial.
+
+            En la versión final, este botón puede dirigir a:
+
+            <br><br>
+
+            ✔ WhatsApp
+
+            <br>
+
+            ✔ Agenda Online
+
+            <br>
+
+            ✔ Calendario de Reservas
+
+            <br>
+
+            ✔ Confirmaciones Automáticas
+        </p>
+
+        <button class="modal-btn close-modal">
+
+            Entendido
+
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+
+/* =========================
+MODAL DEMO
+========================= */
+
+const modal = document.getElementById('demoModal');
+
+const openButtons = document.querySelectorAll('.open-modal');
+
+const closeButtons = document.querySelectorAll('.close-modal');
+
+openButtons.forEach(button => {
+
+    button.addEventListener('click', (e) => {
+
+        e.preventDefault();
+
+        modal.classList.add('show');
+
+        document.body.style.overflow = 'hidden';
+
+    });
+
+});
+
+closeButtons.forEach(button => {
+
+    button.addEventListener('click', () => {
+
+        modal.classList.remove('show');
+
+        document.body.style.overflow = 'auto';
+
+    });
+
+});
+
+modal.addEventListener('click', (e) => {
+
+    if(e.target === modal){
+
+        modal.classList.remove('show');
+
+        document.body.style.overflow = 'auto';
+
+    }
+
+});
+
+
+/* =========================
+SCROLL REVEAL
+========================= */
+
+const reveals = document.querySelectorAll('.reveal');
+
+const observer = new IntersectionObserver((entries)=>{
+
+    entries.forEach((entry)=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add('active');
+
+        }
+
+    });
+
+},{
+    threshold:0.15
+});
+
+reveals.forEach((element)=>{
+
+    observer.observe(element);
+
+});
+
+
+/* =========================
+NAVBAR SCROLL EFFECT
+========================= */
+
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', ()=>{
+
+    if(window.scrollY > 50){
+
+        navbar.style.background =
+        'rgba(18,18,18,.98)';
+
+        navbar.style.boxShadow =
+        '0 10px 30px rgba(0,0,0,.35)';
+
+    }
+
+    else{
+
+        navbar.style.background =
+        'rgba(18,18,18,.95)';
+
+        navbar.style.boxShadow =
+        'none';
+
+    }
+
+});
+
+
+/* =========================
+SMOOTH LINKS
+========================= */
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+    anchor.addEventListener('click', function(e) {
+
+        e.preventDefault();
+
+        const target =
+        document.querySelector(this.getAttribute('href'));
+
+        if(target){
+
+            target.scrollIntoView({
+
+                behavior:'smooth',
+                block:'start'
+
+            });
+
+        }
+
+    });
+
+});
+
+
+/* =========================
+ANIMACIÓN BOTONES
+========================= */
+
+const buttons = document.querySelectorAll(
+'.cta-btn, .nav-btn, .service-card button, .modal-btn'
+);
+
+buttons.forEach(button => {
+
+    button.addEventListener('mouseenter', () => {
+
+        button.style.transform =
+        'translateY(-3px)';
+
+    });
+
+    button.addEventListener('mouseleave', () => {
+
+        button.style.transform =
+        'translateY(0)';
+
+    });
+
+});
+
+
+/* =========================
+MAPA
+========================= */
+
+const mapButton = document.querySelector('.map-btn');
+
+if(mapButton){
+
+    mapButton.addEventListener('click', () => {
+
+        window.open(
+            'https://www.google.com/maps/place/Vintage+Club+Barber/',
+            '_blank'
+        );
+
+    });
+
+}
+
+</script>
+
+</body>
